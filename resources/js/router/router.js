@@ -1,5 +1,5 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from "vue";
+import Router from "vue-router";
 
 function route(path, file, name, children, meta) {
     return {
@@ -27,8 +27,10 @@ const vrouter = new Router({
         }
     },
     routes: [
-        route('/','Inicio','main',null,{title: 'Inicio'}),
-        route("/home","Home", "home",null,{title: "Home2"})
+        route('/','Inicio','inicio',null,{title: 'Inicio'}),
+        route("/home","Home", "home",null,{title: "Home2"}),
+        route('/productos','Productos','productos',null,{title: 'Productos'}),
+        route('/agregar','Agregar','agregar',null,{title: 'Agregar'})
     ]
 });
 
